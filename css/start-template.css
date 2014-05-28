@@ -1,0 +1,118 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.wrapper-bg{
+  background:#08A49B;
+}
+.world{
+   background: url(../img/world.svg);
+}
+.entrance .col-md-3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.entrance .col-md-3 img{
+  margin:0 auto;
+}
+.social{
+  margin-top: 5em;
+}
+.social .col-sm-3  img, .social .col-xs-6 img{
+   margin:0 auto;
+}
+.social .col-sm-3  , .social .col-xs-6 {
+   text-align: center;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-sign-right{
+  position:relative;
+  right:0.8em;
+  float:right;
+}
+
+@media (min-width: 768px) {
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left:  15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left:  0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  
+  
+}
+@media (max-width: 768px) {
+
+.world{
+     background-size:950px;
+     -webkit-background-origin:content-box; /* Safari */
+     background-origin:content-box;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  .world{
+     background-size:1300px;
+     -webkit-background-origin:content-box; /* Safari */
+     background-origin:content-box;
+  }
+}
+@media (min-width: 999px) {
+  .lan-nav{
+     display: none;
+  }
+
+}
+@media (max-width: 1000px) {
+  #language{
+    display: none;
+  }
+}

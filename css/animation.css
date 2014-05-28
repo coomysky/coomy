@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+.spinner {
+  -webkit-animation: rotateplane 3s infinite ease-in-out;
+  animation: rotateplane 3s infinite ease-in-out;
+}
+.move {
+	animation:mymove 5s infinite ease-in-out;
+	-webkit-animation:mymove 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(180px) }
+ 50% { -webkit-transform: perspective(180px) rotateY(180deg) }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: perspective(180px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(180px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(180px) rotateX(0deg) rotateY(180deg);
+    -webkit-transform: perspective(180px) rotateX(0deg) rotateY(180deg)
+  } 
+}
+-webkit-keyframes mymove {
+	0%   {top:0px;}
+	25%  {top:200px;}
+	50%  {top:100px;}
+	75%  {top:200px;}
+	100% {top:0px;}
+}
+
+@keyframes mymove {
+	0%   {top:0px;}
+	25%  {top:200px;}
+	50%  {top:100px;}
+	75%  {top:200px;}
+	100% {top:0px;}
+}
