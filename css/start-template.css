@@ -6,6 +6,14 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
+header .logo{
+  background-image: url(../img/logo2.svg);
+  height: 70px;
+  background-repeat:no-repeat;
+}
+.entrance h2{
+  font-size: 2em;
+}
 
 .wrapper-bg{
   background:#08A49B;
@@ -24,7 +32,7 @@ body {
   margin-top: 5em;
 }
 .social .col-sm-3  img, .social .col-xs-6 img{
-   margin:0 auto;
+   margin:0 auto; margin-top: 10px;
 }
 .social .col-sm-3  , .social .col-xs-6 {
    text-align: center;
@@ -105,13 +113,25 @@ body {
      background-origin:content-box;
   }
 }
-@media (min-width: 999px) {
+@media (min-width: 1001px) {
+.navbar-brand{
+     display: none;
+  }
   .lan-nav{
      display: none;
   }
-
+  .navbar-wrapper {
+    margin-top: 90px;
+  }
+  .social{
+    display: none;
+  }
 }
 @media (max-width: 1000px) {
+   header{
+    display: none;
+  }
+ 
   #language{
     display: none;
   }
